@@ -23,3 +23,20 @@ body {
   color: #EC9C1A;
 
 }
+.product-price {
+  float: left;
+  width: 20%;
+}
+.product-quantity {
+  float: left;
+  width: 20%;
+ }
+.product-removal {
+  float: left;
+  width: 20%;
+}
+.product-line-price {
+  float: left;
+  width: 20%;
+  text-align:right;
+ }

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
   </head>
 
   <body>
@@ -19,9 +22,9 @@
         </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Our Pizzas</a></li>
-          <li><a href="#">Build A Pizza</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#menu">Our Pizzas</a></li>
+          <li><a href="#build">Build A Pizza</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -33,7 +36,7 @@
     <!-- Our Pizzas  -->
     <h1 class="jumbotron text-center">Our Pizzas</h1>
     <h2 class="text-center">Sizes</h2>
-    <div class="container">
+    <div class="container" id="menu">
       <div class="row">
         <div class="col-sm-4 col-xs-6"style="">
           <p>Small</p>
@@ -97,7 +100,7 @@
 
     <!-- Build a Pizza -->
     <h1 class="jumbotron text-center">Build a Pizza</h1>
-    <div class="text-center">
+    <div class="text-center" id="build">
       <h4> <strong>Select Pizza Size</strong></h4>
       <label class="radio-inline"><input type="radio" name="small" checked>Small</label>
       <label class="radio-inline"><input type="radio" name="medium">Medium</label>
@@ -115,9 +118,16 @@
       <label class="radio-inline"><input type="radio" name="hawaii">Hawaiian</label>
       <label class="radio-inline"><input type="radio" name="bbq">Barbeque</label>
     </div>
+
+    <br>
+    <p id="sentence"></p>
     <br>
     <button type="button" name="button" class="btn btn-success btn-block">Add to Cart</button>
 
+
+    <!-- Shopping Cart that shows total cost, and allows to place order, with an alert and prompt for delivery-->
+
+    <!-- checkout button with total cost plus delivery cost -->
 
     <!-- Contact us/Feedback -->
 

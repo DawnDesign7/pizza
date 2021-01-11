@@ -18,7 +18,7 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Pizza Place</a>
+          <a class="navbar-brand">PIZZA PLACE</a>
         </div>
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
@@ -59,17 +59,17 @@
       <div class="row">
         <div class="col-sm-4 col-xs-6" style="">
           <p>Crispy</p>
-          <img src="static/assets/images/smallPizza.jpeg" alt="Small Pizza" width="33%">
+          <img src="static/assets/images/largePizza.jpeg" alt="Small Pizza" width="33%">
           <p class="centered">100sh</p>
         </div>
         <div class="col-sm-4 col-xs-6" style="">
           <p>Stuffed</p>
-          <img src="static/assets/images/smallPizza.jpeg" alt="Small Pizza" width="33%">
+          <img src="static/assets/images/largePizza.jpeg" alt="Small Pizza" width="33%">
           <p class="centered">100sh</p>
         </div>
         <div class="col-sm-4 col-xs-6" style="">
           <p>Gluten Free</p>
-          <img src="static/assets/images/smallPizza.jpeg" alt="Small Pizza" width="33%">
+          <img src="static/assets/images/largePizza.jpeg" alt="Small Pizza" width="33%">
           <p class="centered">200sh</p>
         </div>
       </div>
@@ -78,19 +78,19 @@
       <div class="row">
         <div class="col-sm-4 col-xs-6" style="">
           <p>Pepperoni</p>
-          <img src="static/assets/images/smallPizza.jpeg" alt="Small Pizza" width="33%">
+          <img src="/static/assets/images/pizza1.jpg" alt="Small Pizza" width="33%">
           <p class="centered">100sh</p>
 
         </div>
         <div class="col-sm-4 col-xs-6" style="">
           <p>Hawaiian</p>
-          <img src="static/assets/images/smallPizza.jpeg" alt="Small Pizza" width="33%">
+          <img src="static/assets/images/pizza1.jpg" alt="Small Pizza" width="33%">
           <p class="centered">100sh</p>
 
         </div>
         <div class="col-sm-4 col-xs-6" style="">
           <p>Barbeque</p>
-          <img src="static/assets/images/smallPizza.jpeg" alt="Small Pizza" width="33%">
+          <img src="static/assets/images/pizza1.jpg" alt="Small Pizza" width="33%">
           <p class="centered">100sh</p>
 
         </div>
@@ -101,28 +101,37 @@
     <!-- Build a Pizza -->
     <div id="build">
       <h1 class="jumbotron text-center">Build a Pizza</h1>
-      <div class="text-center" id="size">
+      <div class="text-center" id="size1">
         <h4> <strong>Select Pizza Size</strong></h4>
-        <label class="radio-inline"><input type="radio" name="small" checked>Small</label>
-        <label class="radio-inline"><input type="radio" name="medium">Medium</label>
-        <label class="radio-inline"><input type="radio" name="large">Large</label>
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large</label>
       </div>
-      <div class="text-center" id="crust">
+      <div class="text-center" id="crust1">
         <h4> <strong>Select Pizza Crust</strong></h4>
-        <label class="radio-inline"><input type="radio" name="crispy" checked>Crispy</label>
-        <label class="radio-inline"><input type="radio" name="stuffed">Stuffed</label>
-        <label class="radio-inline"><input type="radio" name="gluten">Gluten-Free</label>
+        <input type="radio" id="gluten" name="crust" value="gluten">
+        <label for="gluten">Gluten-Free</label>
+        <input type="radio" id="stuffed" name="crust" value="stuffed">
+        <label for="stuffed">Stuffed</label>
+        <input type="radio" id="crispy" name="crust" value="crispy">
+        <label for="crispy">Crispy</label>
       </div>
-      <div class="text-center" id="topping">
+      <div class="text-center" id="topping1">
         <h4><strong>Select Pizza Topping</strong></h4>
-        <label class="radio-inline"><input type="radio" name="pepperoni" checked>Pepperoni</label>
-        <label class="radio-inline"><input type="radio" name="hawaii">Hawaiian</label>
-        <label class="radio-inline"><input type="radio" name="bbq">Barbeque</label>
+        <input type="radio" id="pepperoni" name="topping" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <input type="radio" id="hawaii" name="topping" value="hawaii">
+        <label for="hawaii">Hawaiian</label>
+        <input type="radio" id="bbq" name="topping" value="bbq">
+        <label for="bbq">Barbeque</label>
       </div>
       <br>
     </div>
 
-    <button type="button" name="button" class="btn btn-success btn-block" onclick="deliveryAlert()">Add to Cart</button>
+    <button type="submit" name="button" class="btn btn-success btn-block" onclick="deliveryAlert()">Add to Cart</button>
     <br>
     <hr>
 
@@ -148,14 +157,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr id="products">
+
           </tr>
-        <tr>
+        <tr id="subtotal">
           <th>Total Cost</th>
-          <td></td>
+
         </tr>
         </tbody>
       </table>

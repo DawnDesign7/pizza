@@ -99,29 +99,29 @@
     </div>
 
     <!-- Build a Pizza -->
-    <h1 class="jumbotron text-center">Build a Pizza</h1>
-    <div class="text-center" id="build">
-      <h4> <strong>Select Pizza Size</strong></h4>
-      <label class="radio-inline"><input type="radio" name="small" checked>Small</label>
-      <label class="radio-inline"><input type="radio" name="medium">Medium</label>
-      <label class="radio-inline"><input type="radio" name="large">Large</label>
-    </div>
-    <div class="text-center">
-      <h4> <strong>Select Pizza Crust</strong></h4>
-      <label class="radio-inline"><input type="radio" name="crispy" checked>Crispy</label>
-      <label class="radio-inline"><input type="radio" name="stuffed">Stuffed</label>
-      <label class="radio-inline"><input type="radio" name="gluten">Gluten-Free</label>
-    </div>
-    <div class="text-center">
-      <h4><strong>Select Pizza Topping</strong></h4>
-      <label class="radio-inline"><input type="radio" name="pepperoni" checked>Pepperoni</label>
-      <label class="radio-inline"><input type="radio" name="hawaii">Hawaiian</label>
-      <label class="radio-inline"><input type="radio" name="bbq">Barbeque</label>
+    <div id="build">
+      <h1 class="jumbotron text-center">Build a Pizza</h1>
+      <div class="text-center" id="size">
+        <h4> <strong>Select Pizza Size</strong></h4>
+        <label class="radio-inline"><input type="radio" name="small" checked>Small</label>
+        <label class="radio-inline"><input type="radio" name="medium">Medium</label>
+        <label class="radio-inline"><input type="radio" name="large">Large</label>
+      </div>
+      <div class="text-center" id="crust">
+        <h4> <strong>Select Pizza Crust</strong></h4>
+        <label class="radio-inline"><input type="radio" name="crispy" checked>Crispy</label>
+        <label class="radio-inline"><input type="radio" name="stuffed">Stuffed</label>
+        <label class="radio-inline"><input type="radio" name="gluten">Gluten-Free</label>
+      </div>
+      <div class="text-center" id="topping">
+        <h4><strong>Select Pizza Topping</strong></h4>
+        <label class="radio-inline"><input type="radio" name="pepperoni" checked>Pepperoni</label>
+        <label class="radio-inline"><input type="radio" name="hawaii">Hawaiian</label>
+        <label class="radio-inline"><input type="radio" name="bbq">Barbeque</label>
+      </div>
+      <br>
     </div>
 
-    <br>
-    <p id="sentence"></p>
-    <br>
     <button type="button" name="button" class="btn btn-success btn-block" onclick="deliveryAlert()">Add to Cart</button>
     <br>
     <hr>
@@ -165,7 +165,7 @@
 
 
     <!-- checkout button with total cost plus delivery cost -->
-    <button type="button" name="checkout" class="btn btn-block btn-success">Check-Out</button>
+    <button type="button" name="checkout" class="btn btn-block btn-success" onclick="checkOut()">Check-Out</button>
 
     <!-- Contact us/Feedback -->
 

@@ -2,7 +2,7 @@
 Pizza Ordering System
 ​
 # Project description
-Web application where customers order pizza in different sizes with different toppings, with delivery services and checkout. 
+Web application where customers order pizza in different sizes with different toppings, with delivery services and checkout.
 ​
 # Author(s) information
 Dawn M. Ndemo
@@ -31,11 +31,11 @@ Dawn M. Ndemo
 ​
 # Screenshots
 ​
-![App Screenshot](#)
+![App Screenshot](static/assets/images/screeenshotpizza.png)
 ​
 # Live link
 ​
-Delani Studio Live Link: [Delani Studio](https://dawndesign7.github.io/pizza/)
+Delani Studio Live Link: [Pizza Place](https://dawndesign7.github.io/pizza/)
 ​
 # Contact information
 * Email: [Email](dawnmoraa@gmail.com)
